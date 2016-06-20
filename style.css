@@ -3,15 +3,11 @@ html, body {
     padding: 0;
 }
 
-.header_inner {
-    width: 1200px;
-    margin: auto;
+.header {
+    width: 965px;
+    margin: auto auto 25px;
 }
-.header_inner__logo_a {
-    float: left;
-    padding-top: 51px;
-}
-.header_inner__a {
+.header_logo {
     text-decoration: none;
     font-family: Flatform;
     color:  #4d4d4d;
@@ -19,38 +15,36 @@ html, body {
     font-weight: 300;
     margin: 0;
     padding: 0;
+    float: left;
+    padding-top: 32px;
 }
-.header_inner__ul {
+.header_menu {
     margin: 0;
     padding: 0;
+    padding-top: 57px;
+    float: right;
 }
-.header_li {
+.header_menu_item {
     list-style: none;
-}
-.header_inner__item {
     float: left;
     margin-right: 55px;
-
 }
-.header_inner__item:last-child {
+.header_menu_item:last-child {
     margin-right: 0;
 }
 
-.header_inner__item_a {
+.header_item_link {
     font-family: "Open Sans";
     color:  #4d4d4d;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     text-decoration: none;
+
 }
-.header_inner__item_a:hover {
+.header_item_link:hover {
     text-decoration: underline;
 }
-.header_inner__item_ul {
-    padding-top: 57px;
-    float: right;
-}
-.image {
+.gallery {
     background-image: url("img/Layer_11.jpg");
     width: 100%;
     height: 652px;
@@ -60,7 +54,7 @@ html, body {
 .clear {
     clear: both;
 }
-.image_title {
+.gallery_title {
     font-family: "Satellite";
     color:  #4d4d4d;
     font-size: 50px;
@@ -68,7 +62,7 @@ html, body {
     text-align: center;
     padding-top: 228px;
 }
-.image_title__p {
+.gallery_text {
     font-family: "Open Sans";
     color:  #4d4d4d;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
@@ -77,10 +71,7 @@ html, body {
     margin: 0;
     padding-top: 18px;
 }
-.image_p {
-    text-align: center;
-}
-.image_a {
+.gallery_link {
     text-decoration: none;
     display: inline-block;
     background: #4d4d4d;
@@ -93,27 +84,24 @@ html, body {
 }
 .services {
     padding-top: 100px;
-    width: 1200px;
+    width: 965px;
     margin: auto;
     padding-bottom: 100px;
 }
 
-.services_one {
+.services_item {
     text-align: center;
-    width: 330px;
+    width: 255px;
     float: left;
     padding-right: 98px;
 }
-.services_one__last {
+.services_item__last {
     text-align: center;
-    width: 330px;
+    width: 255px;
     float: left;
     padding-right: 0;
 }
-.services_one__img {
-
-}
-.services_one__title {
+.services_item__title {
     font-family: "Open Sans";
     color:  #4d4d4d;
     font-size: 22px;/* Приближение из-за подстановки шрифтов */
@@ -122,7 +110,7 @@ html, body {
     margin: 0;
     padding: 39px 0 41px 0;
 }
-.services_one__text {
+.services_item__text {
     font-family: "Open Sans";
     color:  #727272;
     font-size: 14px;/* Приближение из-за подстановки шрифтов */
@@ -131,11 +119,7 @@ html, body {
     text-align: center;
     margin: 0;
 }
-.image_line {
-    /*display: inline-block;*/
-    width: 1200px;
-    margin: auto;
-}
+
 .video {
     text-align: center;
 }
@@ -162,7 +146,7 @@ html, body {
 }
 .projects {
     text-align: center;
-    width: 1202px;
+    width: 965px;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -176,8 +160,8 @@ html, body {
 }
 .brand {
     background-color:  #f7f7f7;
-    width: 262px;
-    height: 320px;
+    width: 200px;
+    height: 267px;
     position: relative;
     float: left;
     margin-right: 51px;
@@ -185,15 +169,15 @@ html, body {
 .brand_last {
     margin-right: 0;
 }
-.brand_text {
-    padding-top: 144px;
+.brand_name {
+    padding-top: 115px;
     font-family: "Open Sans";
     color:  #d2d1d1;
     font-size: 25px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     font-style: italic;
 }
-.brand_text__p {
+.brand_text {
     margin: 0;
     font-family: "Open Sans";
     color:  #d2d1d1;
@@ -201,7 +185,8 @@ html, body {
     font-weight: 300;
 }
 .brand_project {
-    /*display: none;*/
+    display: none;
+    text-decoration: none;
     width: 100%;
     padding: 22px 0 21px 0;
     background-color: #575757;
@@ -238,7 +223,7 @@ html, body {
     text-align: center;
     padding-top: 27px;
 }
-.subscribe_a {
+.subscribe_link {
     display: block;
     text-decoration: none;
     font-family: "Open Sans";
@@ -248,8 +233,7 @@ html, body {
     border: solid 1px #4d4d4d;
     width: 310px;
     padding: 19px 0 22px 0;
-    margin: auto;
-    margin-top: 53px;
+    margin: 53px auto auto;
     border-radius: 80px;
 }
 .contacts {
@@ -294,49 +278,56 @@ html, body {
     background-color:  #3b3b3b;
 }
 .footer_inner {
-    width: 1200px;
+    width: 965px;
     margin: auto;
     padding-top: 99px;
     padding-bottom: 105px;
 }
-.location, .minima {
+.information, .minima {
     float: left;
     font-family: "Open Sans";
-    width: 300px;
+    width: 243px;
 }
-.location_title, .minima_title {
+.information_title, .minima_title {
     color:  #ffffff;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 28px;
 }
-.adress {
+.address {
     width: 190px;
     color:  #ebebeb;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 600;
     line-height: 25px;
 }
 .telephone {
+    display: block;
     color:  #b5b5b5;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 700;
-    line-height: 25px
+    line-height: 25px;
+    text-decoration: none;
+
 }
 .about {
     display: block;
     color:  #ebebeb;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     line-height: 30px;
 }
 .minima {
-    width: 267px;
+    width: 236px;
 }
 .minima_text {
     color:  #ebebeb;
     font-size: 14px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 25px;
+}
+.form_button {
+    text-align: center;
+    margin-bottom: 20px;
 }
